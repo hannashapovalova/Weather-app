@@ -1,0 +1,54 @@
+body::before {
+    content: '';
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: url(clouds2.jpg);
+    filter: blur(5px);
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #F4EBDD;
+    color: black;
+    
+}
+ul {
+    list-style: none;
+}
+h1, h2, time {
+    display: inline;
+}
+a {
+    color: #3A5BA0;
+    text-decoration: none;
+}
+.card {
+    margin: 15% auto;
+}
+.container {
+    background-image: url(clouds2.jpg);
+    padding: 0;
+}
+.card{
+    background: none;
+}
+.main-city, .main-temp {
+    margin-top: 270px;
+}
+.col-4 {
+    background: rgb(221, 219, 215, 0.9);
+    padding-top: 10px;
+    border-radius: 15px;
+}
+.sun-icon {
+    font-size: 100px;
+    font-weight: lighter;
+    margin-top: 250px;
+}
+.main-temp {
+    padding-left: 20px;
+    padding-right: 0;
+}
