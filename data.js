@@ -89,7 +89,7 @@ function search(event) {
     h2.innerHTML = `${searchInput.value}`;
     } else {
     h2.innerHTML = null;
-    //alert("Please, type a city...");
+    alert("Please, type a city...");
     }
 }
 
@@ -107,11 +107,9 @@ function showTemperature(response) {
     let showWind = document.querySelector("#wind-speed");
     showWind.innerHTML = `${wind}`;
     
-    // Add real humidity
-
-    //let humidity = Math.round(response.data.main.humidity);
-    //let showHumidity = document.querySelector("#humidity");
-    //showHumidity.innerHTML = `${humidity}`;
+    let humidity = Math.round(response.data.main.humidity);
+    let showHumidity = document.querySelector("#humidity");
+    showHumidity.innerHTML = `${humidity}`;
 }
 
 // Get current city and temp by Geolocation
